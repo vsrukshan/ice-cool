@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "829fbc06-ed82-4eab-8eaf-b073077dbf84",
+		"name": "ice-cool",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/menu",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Flower_store\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/menu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"menu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/condiments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/condiments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"condiments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/flavours",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/flavours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flavours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/containers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/containers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"containers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/orders/calculate-price",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"flavour\":{\r\n                \"id\": 1,\r\n                \"name\": \"Raspberry Slushy\",\r\n                \"price\": 200.0,\r\n                \"availbleCondimentTypes\": [\r\n                    {\r\n                        \"id\": 1,\r\n                        \"name\": \"Sprinkles\",\r\n                        \"price\": 50.0\r\n                    },\r\n                    {\r\n                        \"id\": 8,\r\n                        \"name\": \"Dried Apricot\",\r\n                        \"price\": 25.0\r\n                    },\r\n                    {\r\n                        \"id\": 5,\r\n                        \"name\": \"Oreo Crumbles\",\r\n                        \"price\": 60.0\r\n                    },\r\n                    {\r\n                        \"id\": 9,\r\n                        \"name\": \"Dried Blueberry\",\r\n                        \"price\": 25.0\r\n                    },\r\n                    {\r\n                        \"id\": 4,\r\n                        \"name\": \"Dash of Peanut butter\",\r\n                        \"price\": 50.0\r\n                    },\r\n                    {\r\n                        \"id\": 6,\r\n                        \"name\": \"Dried Apples\",\r\n                        \"price\": 25.0\r\n                    },\r\n                    {\r\n                        \"id\": 7,\r\n                        \"name\": \"Dried Mango\",\r\n                        \"price\": 25.0\r\n                    },\r\n                    {\r\n                        \"id\": 2,\r\n                        \"name\": \"Toasted Marshmallow\",\r\n                        \"price\": 100.0\r\n                    }\r\n                ]\r\n            },\r\n        \"condimentTypes\": [\r\n            {\r\n                \"id\": 9,\r\n                \"name\": \"Dried Blueberry\",\r\n                \"price\": 25.0\r\n            },\r\n            {\r\n                \"id\": 7,\r\n                \"name\": \"Dried Mango\",\r\n                \"price\": 25.0\r\n            }\r\n        ],\r\n        \"container\": {\r\n        \"id\": 3,\r\n        \"name\": \"Waffle bowl\",\r\n        \"price\": 50.0\r\n        }\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/calculate-price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"calculate-price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/orders/calculate-price",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"flavour\":{\r\n                \"id\": 1,\r\n                \"name\": \"Raspberry Slushy\",\r\n                \"price\": 200.0,\r\n                \"availbleCondimentTypes\": [\r\n                    {\r\n                        \"id\": 1,\r\n                        \"name\": \"Sprinkles\",\r\n                        \"price\": 50.0\r\n                    },\r\n                    {\r\n                        \"id\": 8,\r\n                        \"name\": \"Dried Apricot\",\r\n                        \"price\": 25.0\r\n                    },\r\n                    {\r\n                        \"id\": 5,\r\n                        \"name\": \"Oreo Crumbles\",\r\n                        \"price\": 60.0\r\n                    },\r\n                    {\r\n                        \"id\": 9,\r\n                        \"name\": \"Dried Blueberry\",\r\n                        \"price\": 25.0\r\n                    },\r\n                    {\r\n                        \"id\": 4,\r\n                        \"name\": \"Dash of Peanut butter\",\r\n                        \"price\": 50.0\r\n                    },\r\n                    {\r\n                        \"id\": 6,\r\n                        \"name\": \"Dried Apples\",\r\n                        \"price\": 25.0\r\n                    },\r\n                    {\r\n                        \"id\": 7,\r\n                        \"name\": \"Dried Mango\",\r\n                        \"price\": 25.0\r\n                    },\r\n                    {\r\n                        \"id\": 2,\r\n                        \"name\": \"Toasted Marshmallow\",\r\n                        \"price\": 100.0\r\n                    }\r\n                ]\r\n            },\r\n        \"condimentTypes\": [\r\n            {\r\n                \"id\": 9,\r\n                \"name\": \"Dried Blueberry\",\r\n                \"price\": 25.0\r\n            },\r\n            {\r\n                \"id\": 3,\r\n                \"name\": \"Toasted Almond Flakes\",\r\n                \"price\": 150.0\r\n            }\r\n        ],\r\n        \"container\": {\r\n        \"id\": 3,\r\n        \"name\": \"Waffle bowl\",\r\n        \"price\": 50.0\r\n        }\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/calculate-price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"calculate-price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/orders/calculate-price",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"flavour\":{\r\n                \"id\": 1,\r\n                \"name\": \"Raspberry Slushy\",\r\n                \"price\": 200.0,\r\n                \"availbleCondimentTypes\": [\r\n                    {\r\n                        \"id\": 1,\r\n                        \"name\": \"Sprinkles\",\r\n                        \"price\": 50.0\r\n                    },\r\n                    {\r\n                        \"id\": 8,\r\n                        \"name\": \"Dried Apricot\",\r\n                        \"price\": 25.0\r\n                    },\r\n                    {\r\n                        \"id\": 5,\r\n                        \"name\": \"Oreo Crumbles\",\r\n                        \"price\": 60.0\r\n                    },\r\n                    {\r\n                        \"id\": 9,\r\n                        \"name\": \"Dried Blueberry\",\r\n                        \"price\": 25.0\r\n                    },\r\n                    {\r\n                        \"id\": 4,\r\n                        \"name\": \"Dash of Peanut butter\",\r\n                        \"price\": 50.0\r\n                    },\r\n                    {\r\n                        \"id\": 6,\r\n                        \"name\": \"Dried Apples\",\r\n                        \"price\": 25.0\r\n                    },\r\n                    {\r\n                        \"id\": 7,\r\n                        \"name\": \"Dried Mango\",\r\n                        \"price\": 25.0\r\n                    },\r\n                    {\r\n                        \"id\": 2,\r\n                        \"name\": \"Toasted Marshmallow\",\r\n                        \"price\": 100.0\r\n                    }\r\n                ]\r\n            },\r\n        \"condimentTypes\": [\r\n            {\r\n                \"id\": 9,\r\n                \"name\": \"Dried Blueberry\",\r\n                \"price\": 25.0\r\n            },\r\n            {\r\n                \"id\": 7,\r\n                \"name\": \"Dried Mango\",\r\n                \"price\": 25.0\r\n            }\r\n        ],\r\n        \"container\": {\r\n        \"id\": 3,\r\n        \"name\": \"Waffle bowl\",\r\n        \"price\": 50.0\r\n        }\r\n    },\r\n    {\r\n        \"flavour\":{\r\n        \"id\": 2,\r\n        \"name\": \"Coco Coffee\",\r\n        \"price\": 350.0,\r\n        \"availbleCondimentTypes\": [\r\n                {\r\n                    \"id\": 3,\r\n                    \"name\": \"Toasted Almond Flakes\",\r\n                    \"price\": 150.0\r\n                },\r\n                {\r\n                    \"id\": 5,\r\n                    \"name\": \"Oreo Crumbles\",\r\n                    \"price\": 60.0\r\n                },\r\n                {\r\n                    \"id\": 4,\r\n                    \"name\": \"Dash of Peanut butter\",\r\n                    \"price\": 50.0\r\n                }\r\n            ]\r\n         },\r\n        \"condimentTypes\": [\r\n            {\r\n                \"id\": 4,\r\n                \"name\": \"Dash of Peanut butter\",\r\n                \"price\": 50.0\r\n            }\r\n        ],\r\n        \"container\": {\r\n        \"id\": 3,\r\n        \"name\": \"Waffle bowl\",\r\n        \"price\": 50.0\r\n        }\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/calculate-price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"calculate-price"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
