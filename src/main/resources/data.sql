@@ -1,0 +1,51 @@
+INSERT INTO FLAVOUR (id, name, price) VALUES (1, 'Raspberry Slushy', 200.00);
+INSERT INTO FLAVOUR (id, name, price) VALUES (2, 'Coco Coffee', 350.00);
+INSERT INTO FLAVOUR (id, name, price) VALUES (3, 'Nutty Fruit', 150.00);
+INSERT INTO FLAVOUR (id, name, price) VALUES (4, 'Pistachio Delight', 350.00);
+
+INSERT INTO CONDIMENT (id, name) VALUES (1, 'Sprinkles');
+INSERT INTO CONDIMENT (id, name) VALUES (2, 'Toasted Marshmallow');
+INSERT INTO CONDIMENT (id, name) VALUES (3, 'Toasted Almond Flakes');
+INSERT INTO CONDIMENT (id, name) VALUES (4, 'Dash of Peanut butter');
+INSERT INTO CONDIMENT (id, name) VALUES (5, 'Oreo Crumbles');
+INSERT INTO CONDIMENT (id, name) VALUES (6, 'Dried Fruit');
+
+INSERT INTO CONDIMENT_TYPE (id, name, price, condiment) VALUES (1, 'Sprinkles', 50.00, 1);
+INSERT INTO CONDIMENT_TYPE (id, name, price, condiment) VALUES (2, 'Toasted Marshmallow', 100.00, 2);
+INSERT INTO CONDIMENT_TYPE (id, name, price, condiment) VALUES (3, 'Toasted Almond Flakes', 150.00, 3);
+INSERT INTO CONDIMENT_TYPE (id, name, price, condiment) VALUES (4, 'Dash of Peanut butter', 50.00, 4);
+INSERT INTO CONDIMENT_TYPE (id, name, price, condiment) VALUES (5, 'Oreo Crumbles', 60.00, 5);
+INSERT INTO CONDIMENT_TYPE (id, name, price, condiment) VALUES (6, 'Dried Apples', 25.00, 6);
+INSERT INTO CONDIMENT_TYPE (id, name, price, condiment) VALUES (7, 'Dried Mango', 25.00, 6);
+INSERT INTO CONDIMENT_TYPE (id, name, price, condiment) VALUES (8, 'Dried Apricot', 25.00, 6);
+INSERT INTO CONDIMENT_TYPE (id, name, price, condiment) VALUES (9, 'Dried Blueberry', 25.00, 6);
+
+INSERT INTO CONTAINER (id, name, price) VALUES (1, 'Wafer cone', 20.00);
+INSERT INTO CONTAINER (id, name, price) VALUES (2, 'Waffle cone', 40.00);
+INSERT INTO CONTAINER (id, name, price) VALUES (3, 'Waffle bowl', 50.00);
+INSERT INTO CONTAINER (id, name, price) VALUES (4, 'Ice cream sandwich wafers', 60.00);
+
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (1, 1);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (3, 1);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (1, 2);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (3, 2);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (4, 2);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (3, 3);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (2, 3);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (4, 3);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (1, 4);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (2, 4);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (3, 4);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (4, 4);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (1, 5);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (2, 5);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (3, 5);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (4, 5);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (1, 6);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (3, 6);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (1, 7);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (3, 7);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (1, 8);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (3, 8);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (1, 9);
+INSERT INTO FLAVOUR_CONDIMENT_TYPE (flavour_id, condiment_type_id) VALUES (3, 9);
